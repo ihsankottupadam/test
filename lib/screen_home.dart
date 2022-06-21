@@ -14,7 +14,16 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(title: const Text('Home')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ElevatedButton(
+              onPressed: () {
+                add();
+              },
+              child: const Text('Add'))
+        ],
       ),
     );
   }
+
+  add() {}
 }
