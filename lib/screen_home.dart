@@ -30,8 +30,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
           ElevatedButton(onPressed: () {}, child: const Text('Edit')),
           Container( child: Center(
-            child: Text('This is edited by murthaza and this is the first commit  '),
-          ),)
+            child: Text('This is edited by murthaza and this is the first commit '),
+          ),),Container(child: Center(child: Text('this is also edited by murhaza'),),),
+          Text('Hay Friends !!!! how are you doing ')
 
         ],
       ),
