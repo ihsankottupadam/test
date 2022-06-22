@@ -15,11 +15,22 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-        ElevatedButton(onPressed: (){remove();}, child: Text('remove'))
+          ElevatedButton(
+              onPressed: () {
+                remove();
+              },
+              child: Text('remove')),
+          ElevatedButton(
+              onPressed: () {
+                add();
+              },
+              child: const Text('Add'))
         ],
       ),
     );
   }
-  
-  void remove() {   }
+
+  void remove() {}
+
+  add() {}
 }
