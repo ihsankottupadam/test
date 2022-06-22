@@ -25,7 +25,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 add();
               },
               child: const Text('Add')),
-              TextButton(onPressed: (){}, child:Text('new button added '))
+
+              TextButton(onPressed: (){}, child:Text('new button added ')),
+
+          ElevatedButton(onPressed: () {}, child: const Text('Edit'))
+
         ],
       ),
     );
