@@ -28,7 +28,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
               TextButton(onPressed: (){}, child:Text('new button added ')),
 
-          ElevatedButton(onPressed: () {}, child: const Text('Edit'))
+          ElevatedButton(onPressed: () {}, child: const Text('Edit')),
+          Container( child: Center(
+            child: Text('This is edited by murthaza and this is the first commit  '),
+          ),)
 
         ],
       ),
