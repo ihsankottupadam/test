@@ -21,17 +21,35 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {
                 remove();
               },
-              child: Text('remove')),
+              style: ElevatedButton.styleFrom(primary: Colors.red),
+              child: const Text('remove')),
           ElevatedButton(
-              onPressed: () {
-                add();
-              },
-              child: const Text('Add')),
+
+                onPressed: () {
+              add();
+            },
+            style: ElevatedButton.styleFrom(primary: Colors.green),
+            child: const Text('Add'),
+          ),
 
               TextButton(onPressed: (){}, child:Text('new button added ')),
 
-          ElevatedButton(onPressed: () {}, child: const Text('Edit')),
-          Text('this is Akhil')
+             ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(primary: Colors.blue),
+              child: const Text('Edit')),
+          Text('this is Akhil'),
+
+
+        
+       
+          ListView.builder(
+            itemCount: 10,
+            itemBuilder: (context, index) {
+              return ListTile(title: Text('item $index'));
+            },
+          ),
+          IconButton(onPressed: () {}, icon: const Icon(Icons.close))
 
         ],
       ),
