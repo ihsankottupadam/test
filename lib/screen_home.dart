@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {},
               style: ElevatedButton.styleFrom(primary: Colors.blue),
               child: const Text('Edit')),
-          const Text('this is Akhil'),
+          const Text('this is Murthaza'),
           ListView.builder(
             itemCount: 10,
             itemBuilder: (context, index) {
