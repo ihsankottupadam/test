@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -24,26 +22,18 @@ class _HomeScreenState extends State<HomeScreen> {
               style: ElevatedButton.styleFrom(primary: Colors.red),
               child: const Text('remove')),
           ElevatedButton(
-
-                onPressed: () {
+            onPressed: () {
               add();
             },
             style: ElevatedButton.styleFrom(primary: Colors.green),
             child: const Text('Add'),
           ),
-
-              TextButton(onPressed: (){}, child:Text('new button added ')),
-
-
-             ElevatedButton(
+          TextButton(onPressed: () {}, child: const Text('new button added ')),
+          ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(primary: Colors.blue),
               child: const Text('Edit')),
-          Text('this is Akhil'),
-
-
-        
-       
+          const Text('this is Akhil'),
           ListView.builder(
             itemCount: 10,
             itemBuilder: (context, index) {
@@ -51,14 +41,14 @@ class _HomeScreenState extends State<HomeScreen> {
             },
           ),
           IconButton(onPressed: () {}, icon: const Icon(Icons.close)),
-
-        
-          Container( child: Center(
-            child: Text('This is edited by murthaza and this is the first commit '),
-          ),),Container(child: Center(child: Text('this is also edited by murhaza'),),),
-          Text('Hay Friends !!!! how are you doing ')
-
-
+          const Center(
+            child: Text(
+                'This is edited by murthaza and this is the first commit '),
+          ),
+          const Center(
+            child: Text('this is also edited by murhaza'),
+          ),
+          const Text('Hay Friends !!!! how are you doing ')
         ],
       ),
     );
