@@ -24,7 +24,8 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {
                 add();
               },
-              child: const Text('Add'))
+              child: const Text('Add')),
+          ElevatedButton(onPressed: () {}, child: const Text('Edit'))
         ],
       ),
     );
