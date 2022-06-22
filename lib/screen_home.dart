@@ -34,6 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               TextButton(onPressed: (){}, child:Text('new button added ')),
 
+
              ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(primary: Colors.blue),
@@ -49,7 +50,14 @@ class _HomeScreenState extends State<HomeScreen> {
               return ListTile(title: Text('item $index'));
             },
           ),
-          IconButton(onPressed: () {}, icon: const Icon(Icons.close))
+          IconButton(onPressed: () {}, icon: const Icon(Icons.close)),
+
+        
+          Container( child: Center(
+            child: Text('This is edited by murthaza and this is the first commit '),
+          ),),Container(child: Center(child: Text('this is also edited by murhaza'),),),
+          Text('Hay Friends !!!! how are you doing ')
+
 
         ],
       ),
